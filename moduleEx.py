@@ -21,13 +21,16 @@
 # # 직접 생성한 모듈 불러오기
 
 # #불러오기 방법1
-# # import ex1 # 해당 모듈의 모든 기능을 불러오기
+# import ex1 # 해당 모듈의 모든 기능을 불러오기
+
+# print(ex1.funA())
+# print(ex1.funB())
 
 # #불러오기 방법2
 # from ex1 import funA, funB #해당 모듈의 특정 기능을 불러오기
 
-# print(ex1.funA())
-# print(ex1.funB())
+# print(funA())
+# print(funB())
 
 # # 날짜 / 시간 모듈
 # # 날짜와 시간을 다루는 모듈
@@ -77,7 +80,7 @@
 
 # import json
 
-# date = {
+# data = {
 #     "name" : "jin",
 #     "age" : 22
 # }
@@ -101,11 +104,11 @@
 # with open('test.csv', 'w', newline='') as f:
 #     csv.writer(f).writerow(['name', 'score'])
 
-# 자료구조 모듈
-# 자료구조를 편하게 쓰도록 도와주는 모듈
-# 카운트, 큐, 딕셔너리 확장 기능 등을 제공
+# # 자료구조 모듈
+# # 자료구조를 편하게 쓰도록 도와주는 모듈
+# # 카운트, 큐, 딕셔너리 확장 기능 등을 제공
 
-from collections import Counter
+# from collections import Counter
 
-#문자열에서 각 갯수를 세주는 것
-print(Counter('apple'))
+# #문자열에서 각 갯수를 세주는 것
+# print(Counter('apple'))

@@ -10,9 +10,9 @@ ws = wb.active
 
 #예제 데이터 입력
 ws.append(['Name', 'Score']) # 헤더 행
-ws.append(['김', '90'])
-ws.append(['이', '80'])
-ws.append(['박', '70'])
+ws.append(['김', 90])
+ws.append(['이', 80])
+ws.append(['박', 70])
 
 #BarChart 객체 생성(막대 그래프)
 chart = BarChart()

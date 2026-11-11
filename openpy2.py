@@ -30,28 +30,28 @@ w1.save('test2.xlsx')
 w2 = load_workbook('test2.xlsx')
 
 # 열어온 엑셀 파일에서 첫 번째 시트 선택
-# ws2 = w2.active
+ws2 = w2.active
 
 # 셀에 값 입력하기
 # A열 1행 셀에 hello라는 텍스트 입력
-# ws2['A1'] = 'hello'
+ws2['A1'] = 'hello'
 
 # 변경사항 저장
-# w2.save('test2.xlsx')
+w2.save('test2.xlsx')
 
 # C열 3행 셀에 bye라는 텍스트 입력
-# ws2['C3'] = 'bye'
+ws2['C3'] = 'bye'
 
 # 변경사항 저장
-# w2.save('test2.xlsx')
+w2.save('test2.xlsx')
 
-# a = 'python'
+a = 'python'
 # ws2['D5':'F8'] : D5부터 F8셀 까지의 범위를 선택(4행 3열 = 총 12개의 셀)
-# for row in ws2['D5':'F8']:
-#     for cell in row: # 각 행 안의 셀들을 하나씩 꺼내서
-#         cell.value = a # 셀에 ptyhon이라는 값 입력
+for row in ws2['D5':'F8']:
+    for cell in row: # 각 행 안의 셀들을 하나씩 꺼내서
+        cell.value = a # 셀에 ptyhon이라는 값 입력
 
 # 변경사항 저장
-# w2.save('test2.xlsx')
+w2.save('test2.xlsx')
 
-# print(ws2['A1'].value)
+print(ws2['A1'].value)
